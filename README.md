@@ -1,6 +1,8 @@
 # atulranaflutterchatui
 
-A new Flutter application.
+A new Flutter ChatUI-Design Application
+
+
 
 ## Getting Started
 
