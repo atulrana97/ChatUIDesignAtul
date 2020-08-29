@@ -12,6 +12,7 @@ class ChatScreen extends StatefulWidget {
 }
 
 class _ChatScreenState extends State<ChatScreen> {
+  TextEditingController message_text = TextEditingController();
   _chatBubble(Message message, bool isMe, bool isSameUser) {
     if (isMe) {
       return Column(
@@ -164,6 +165,7 @@ class _ChatScreenState extends State<ChatScreen> {
           ),
           Expanded(
             child: TextField(
+              controller: message_text,
               decoration: InputDecoration.collapsed(
                 hintText: 'Send a message..',
               ),
@@ -174,7 +176,21 @@ class _ChatScreenState extends State<ChatScreen> {
             icon: Icon(Icons.send),
             iconSize: 25,
             color: Theme.of(context).primaryColor,
-            onPressed: () {},
+            onPressed: () {
+              messages.insert(
+                  0,
+                  Message(
+                      sender: currentUser,
+                      text: message_text.text,
+                      unread: true,
+                      time: (((DateTime.now().hour) % 12).toString()) +
+                          ':' +
+                          DateTime.now().minute.toString() +
+                          'PM'));
+              setState(() {
+                message_text.text = '';
+              });
+            },
           ),
         ],
       ),

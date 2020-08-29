@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/atul/AndroidStudioProjects/atulranaflutterchatui/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/home/atul/ChatUIDesignAtul/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/home/atul/AndroidStudioProjects/atulranaflutterchatui/android/app/src/main/res/values/styles.xml",
+                    "source": "/home/atul/ChatUIDesignAtul/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
