@@ -1,6 +1,8 @@
 # atulranaflutterchatui
 
 A new Flutter ChatUI-Design Application
+Here is a video on how the app looks
+https://drive.google.com/file/d/10LDn-DB9lnEx7Jrl3etznbbAjSDaaXg3/view?usp=sharing
 
 
 
